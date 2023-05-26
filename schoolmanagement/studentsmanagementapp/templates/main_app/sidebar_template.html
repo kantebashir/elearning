@@ -345,13 +345,13 @@
                             </li>
 
                             <li class="nav-item">
-                                {% url 'lectureupload' as lectureupload %}
+                                {% url 'add_subject' as add_subject %}
                                 <a href="{{add_subject}}"
-                                    class="nav-link {% if lectureupload == request.path %} active {% endif %}">
-                                    <i class="nav-icon fas fa-th"></i>
+                                    class="nav-link  {% if add_subject == request.path %} active {% endif %}">
+                                    <i class="far fa-circle nav-icon"></i>
                                     <p>
-                                        Add Notes
-
+                                        Course Unit
+    
                                     </p>
                                 </a>
                             </li>
