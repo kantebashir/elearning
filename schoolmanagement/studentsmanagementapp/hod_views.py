@@ -179,9 +179,11 @@ def add_course(request):
 
 
 def add_subject(request):
+    subjects = Subject.objects.all()
     form = SubjectForm(request.POST or None)
     context = {
         'form': form,
+        'subjects': subjects,
         'page_title': 'Add Subject'
     }
     if request.method == 'POST':
@@ -241,7 +243,7 @@ def manage_subject(request):
     subjects = Subject.objects.all()
     context = {
         'subjects': subjects,
-        'page_title': 'Manage Subjects'
+        'page_title': 'Manage Subjects/Course units'
     }
     return render(request, "hod_template/manage_subject.html", context)
 

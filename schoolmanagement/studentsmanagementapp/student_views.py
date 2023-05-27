@@ -205,3 +205,7 @@ def student_view_result(request):
         'page_title': "View Results"
     }
     return render(request, "student_template/student_view_result.html", context)
+
+
+def student_view_notes(request):
+    return render(request, 'student_template/student_view_notes.html')

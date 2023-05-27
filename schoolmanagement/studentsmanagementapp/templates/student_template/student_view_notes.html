@@ -9,20 +9,14 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- general form elements -->
-                <div class="card card-dark">
-                    <div class="card-header">
-                        <h3 class="card-title">Add Subject/course unit</h3>
-                    </div>
-
-                    {% include "main_app/form_template.html" with messages=messages  form=form button_text="Add course unit"%}
-                </div>
+                
                 
                 <table class="table table-bordered">
                     <tr>
-                        <th>s/no</th>
-                        <th>course</th>
-                        <th>notes</th>
-                        <th>video</th>
+                        <th>S/No</th>
+                        <th>Subject</th>
+                        <th>Notes</th>
+                        <th>Video</th>
                         
                  </tr>
                  {% for subject in subjects %}

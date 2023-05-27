@@ -488,6 +488,15 @@
                                         </li>
 
                                         <li class="nav-item">
+                                            {% url 'student_view_notes' as student_view_notes %}
+                                            <a href="{{student_view_notes}}"
+                                                class="nav-link {% if student_view_notes == request.path %} active {% endif %}">
+                                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                                <p>Notes</p>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
                                             {% url 'student_view_attendance' as student_view_attendance %}
                                             <a href="{{student_view_attendance}}"
                                                 class="nav-link {% if student_view_attendance == request.path %} active {% endif %}">
@@ -495,6 +504,17 @@
                                                 <p>View Attendance</p>
                                             </a>
                                         </li>
+
+                                        <li class="nav-item">
+                                            {% url 'student_view_result' as student_view_result %}
+                                            <a href="{{student_view_result}}"
+                                                class="nav-link {% if student_view_result == request.path %} active {% endif %}">
+                                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                                <p>View results</p>
+                                            </a>
+                                        </li>
+
+                                        
 
                                         <li class="nav-item">
                                             {% url 'student_view_notification' as student_view_notification %}
@@ -520,6 +540,7 @@
                                             </a>
                                         </li>
 
+                                        
                                         <li class="nav-item">
                                             {% url 'student_feedback' as student_feedback %}
                                             <a href="{{student_feedback}}"
