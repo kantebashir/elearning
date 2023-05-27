@@ -491,7 +491,7 @@
                                             {% url 'student_view_notes' as student_view_notes %}
                                             <a href="{{student_view_notes}}"
                                                 class="nav-link {% if student_view_notes == request.path %} active {% endif %}">
-                                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                                <i class="nav-icon fa fa-book"></i>
                                                 <p>Notes</p>
                                             </a>
                                         </li>
@@ -500,7 +500,7 @@
                                             {% url 'student_view_attendance' as student_view_attendance %}
                                             <a href="{{student_view_attendance}}"
                                                 class="nav-link {% if student_view_attendance == request.path %} active {% endif %}">
-                                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                                <i class="nav-icon fa fa-book"></i>
                                                 <p>View Attendance</p>
                                             </a>
                                         </li>
